@@ -1,0 +1,312 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 990px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+    
+  }
+
+  .text-center{
+      padding-top: 20%;
+  }
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+nav{
+    padding-bottom:5%;
+    font-family: "ubuntu";
+    font-weight: 600;
+}
+.getintouch,em,li{
+    font-family: "ubuntu";
+    font-weight: 600;
+}
+
+
+
+
+#waveeffect{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background:#3586ff;
+    overflow:hidden;
+}
+
+.wave{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100px;
+    background: url('../images/wave.png');
+    background-size: 1000px 100px;
+
+}
+
+.wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index:1000;
+    opacity:1;
+    animation-delay:0s;
+    bottom:0;
+}
+.wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index:999;
+    opacity:0.5;
+    animation-delay:-5s;
+    bottom:10px;
+}
+.wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index:998;
+    opacity:0.2;
+    animation-delay:-2s;
+    bottom:15px;
+}
+.wave.wave4{
+    animation: animate2 5s linear infinite;
+    z-index:997;
+    opacity:0.7;
+    animation-delay:-5s;
+    bottom:20px;
+}
+
+@keyframes animate{
+
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2{
+
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+
+h1 {
+    
+    font-family: 'Montserrat';
+    font-weight:900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color:white;
+    text-align: center;
+    
+    
+}
+
+h2{
+    text-align: center;
+    padding-bottom:5%;
+}
+
+h5 {
+  letter-spacing: 3px;
+  color:white;
+}
+
+p {
+    line-height: 1.5;
+    font-family: "ubuntu";
+    font-size: large;
+    font-weight: 600;
+    padding-bottom: 5%;
+}
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+
+.titletext{
+    text-align: center;
+    padding-top:10%;
+    padding-bottom:7%;
+    
+}
+
+
+
+
+
+
+
+#about{
+    padding:10% 15%;
+    
+}
+
+
+#features{
+    padding:10% 15%;
+    text-align: center;
+    background-color: powderblue;
+}
+
+.motto {
+    padding-bottom: 10%;
+    padding-top: 5%;
+    
+}
+
+.logo {
+    padding-bottom:5%;
+    color:#3586ff;
+}
+
+.logo:hover{
+    color:#eeeeee;
+}
+
+.mottop {
+    padding:0 6% 5% 6%;
+    
+
+}
+
+.partnersImage{
+    width:50%;
+}
+
+#testimonials-caraousel {
+    padding:3% 15% 10% 15% ;
+    text-align: center;
+
+}
+
+#testimonials{
+    padding:10% ;
+}
+
+.testimonial-text{
+    padding-top: 0;
+}
+.userdp{
+    width:10%;
+    border-radius: 100%;
+}
+
+#services{
+    padding-top: 10%;
+    text-align: center;
+    padding-bottom: 10%;
+    padding-left:5%;
+    padding-right: 5%;
+    
+}
+
+.servicesbutton{
+    margin:5%
+}
+
+#press{
+    text-align:center;
+    padding:7% 15%;
+}
+
+.press-img {
+    width:10%;
+    margin:3%;
+
+}
+
+#pricing{
+    padding-top:10%;
+    padding-bottom: 10%;
+    padding-right:5%;
+    padding-left: 5%;
+    text-align: center;
+    
+    
+}
+
+
+  
+  
+  /* Add styles to the form container */
+  .formcontainer {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .loginbtn {
+    background-color:rgb(21, 138, 233);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .loginbtn:hover {
+    opacity: 1;
+  }
+
+  #footer{
+      text-align: center;
+      padding-top: 5%;
+      
+  }
+
+  .footer-icon{
+      padding-bottom: 3%;
+      color:grey;
+  }
+
+  .footer-icon:hover{
+      color:black;
+  }
+
+  .contacttext{
+      color:black;
+  }
